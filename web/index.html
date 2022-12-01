@@ -10,13 +10,16 @@
 <body>
     <h1 id="Header">click for random background color</h1>
     <p id="par">Click to reset color</p>
+    <p id="par2">click for grey background</p>
     <script>
         console.log("Deez Nuts Lmao");
         var head = document.getElementById("Header");
         var reset = document.getElementById("par");
+        var grey = document.getElementById("par2");
 
         head.addEventListener('click', RdColor);
         reset.addEventListener('click', ResetColor);
+        grey.addEventListener('click', greybackground);
 
         function RdColor(){
             var numb = Math.random();
@@ -51,6 +54,9 @@
 
         function ResetColor(){
             document.body.style.backgroundColor = "maroon";
+        }
+        function greybackground(){
+            document.body.style.backgroundColor = "grey";
         }
     </script>
     
