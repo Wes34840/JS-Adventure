@@ -1,0 +1,32 @@
+body{
+    background-color: green;
+}
+#koelkast{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+h2{
+    margin: 0 0 10 0; /* T R B L */
+}
+section{
+    border: 2px solid black;
+    padding: 20px;
+    font-style: bold;
+    min-height: 200px;
+}
+button{
+    padding: 10px 20px;
+    background-color: lightskyblue;
+    color: navy;    
+    font-size: 18px;
+    border: 2px solid black;
+}
+.Fruit{
+    color: red;
+}
+.Groente{
+    color: green;
+}
