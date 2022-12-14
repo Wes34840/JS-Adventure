@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+#container{
+    background-color: silver;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+h2{
+    font-family: 'Merriweather', sans-serif;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+#buttons{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+button{
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    margin-left: 6px;
+}
+img{
+    border-radius: 10px;
+    width:50%;
+    height:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 25%;
+}
+
