@@ -1,0 +1,25 @@
+/* margin: t r b l */
+*{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    background-color: silver;
+    width: 60vw;
+    height: 40vw;
+    margin: 5vw auto auto auto; 
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 2px solid black;
+}
+#myInteraction{
+    padding: 10px;
+}
+p{
+    padding-top: 15px;
+}
+#container > img{
+    height: 40vw;
+}
