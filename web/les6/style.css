@@ -1,0 +1,80 @@
+*{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    overflow: hidden;
+}
+#floorImg{
+    margin-top: 10vh;
+    width: 30vw;
+    z-index: 1;
+
+}
+#container{
+    background-color: silver;
+    width: 60vw;
+    height: 100vh;
+    padding-top: 10px;
+    position: relative;
+}
+#container > img{
+    width: 75%;
+    position: absolute;
+    left: 12.5%;
+}
+#myInteraction{
+    padding: 10px;
+    padding-left: 15%;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 75%;
+}
+#myInteraction > button{
+    width: 40px;
+    height: 40px;
+}
+p{
+    padding-top: 15px;
+}
+#buttonForward{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    visibility: visible;
+}
+#buttonRight{
+    position: absolute;
+    top: 25%;
+    left: 24%;
+}
+#buttonBack{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+#buttonLeft{
+    position: absolute;
+    top: 25%;
+    left: 16%;
+}
+#myTitle{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+#response{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+#information{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}

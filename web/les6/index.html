@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <figure>
+        <img id="floorImg" src="img/floors/floor0.png">
+    </figure>
+    <div id="container">
+        <img id="myImage" src="img/1.jpg" alt="image SB">
+        <div id="myInteraction">
+            <div id="myTitle">
+                spot 1
+            </div>
+            <button id="buttonForward" onclick="app.goDir('Forward')">↑</button>
+            <button id="buttonRight" onclick="app.goDir('Right')">→</button>
+            <button id="buttonBack" onclick="app.goDir('Back')">↓</button>
+            <button id="buttonLeft" onclick="app.goDir('Left')">←</button>
+            <p id="response">Response</p>
+            <p id="information">Placeholder</p>
+        </div>              
+    </div>
+</body>
+</html>
