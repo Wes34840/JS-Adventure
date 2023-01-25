@@ -11,7 +11,7 @@ body{
     margin-top: 10vh;
     width: 30vw;
     z-index: 1;
-
+    padding: 10px;
 }
 #container{
     background-color: silver;
@@ -23,6 +23,7 @@ body{
 #container > img{
     width: 75%;
     position: absolute;
+    top: 7%;    
     left: 12.5%;
 }
 #myInteraction{
@@ -42,39 +43,39 @@ p{
 }
 #buttonForward{
     position: absolute;
-    top: 0;
+    top: 5%;
     left: 20%;
     visibility: visible;
 }
 #buttonRight{
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 24%;
 }
 #buttonBack{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 20%;
 }
 #buttonLeft{
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 16%;
 }
 #myTitle{
     position: absolute;
-    top: 0;
+    top: 2%;
     left: 40%;
     font-size: 200%;
     margin-bottom: 20px;
 }
 #response{
     position: absolute;
-    top: 30%;
+    top: 32%;
     left: 40%;
 }
 #information{
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 40%;
 }

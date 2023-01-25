@@ -210,13 +210,9 @@ class App
         }
     }
     goDir(direction){
-        if (this.locations[this.current].possible.includes(direction) == true){
-            let point_index = this.locations[this.current].directions[direction]
-            this.show(point_index)
-        }
-        else{
-            this.response.textContent = "You cannot go here"
-        }
+        let point_index = this.locations[this.current].directions[direction]
+        this.show(point_index)
+
     }
 }
 
