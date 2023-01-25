@@ -189,9 +189,9 @@ class App
         this.information.textContent = "Your possible choices now are " + this.locations[this.current].possible
         this.myTitle.textContent = this.locations[index].title;
         this.myImage.src = this.locations[index].image
-        this.buttonVisible(this.current)
+        this.buttonVisible()
     }
-    buttonVisible(index){
+    buttonVisible(){
         this.buttonForward.style.visibility = "hidden"
         this.buttonRight.style.visibility = "hidden"
         this.buttonLeft.style.visibility = "hidden"
