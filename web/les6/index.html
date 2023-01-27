@@ -9,6 +9,9 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="endScreen">
+        you win, i guess
+    </p>
     <figure>
         <img id="floorImg" src="img/floors/floor0.png">
     </figure>
@@ -22,8 +25,11 @@
             <button id="buttonRight" onclick="app.goDir('Right')">→</button>
             <button id="buttonBack" onclick="app.goDir('Back')">↓</button>
             <button id="buttonLeft" onclick="app.goDir('Left')">←</button>
-            <p id="response">Response</p>
-            <p id="information">Placeholder</p>
+            <button id="buttonPickUp" onclick="app.pickUp()">pick up</button>
+            <button id="buttonLeave" onclick="app.leave()">Leave</button>
+            <p id="response">You arrive at Mediacollege Amsterdam</p>
+            <p id="information"></p>
+            <p id="inventory">Inventory:    </p>
         </div>              
     </div>
 </body>

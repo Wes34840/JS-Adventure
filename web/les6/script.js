@@ -3,12 +3,17 @@ class App
     constructor(){
         this.myTitle = document.getElementById("myTitle")
         this.myImage = document.getElementById("myImage")
+        this.endScreen = document.getElementById("endScreen")
         this.buttonForward = document.getElementById("buttonForward")
         this.buttonRight = document.getElementById("buttonRight")
         this.buttonLeft = document.getElementById("buttonLeft")
         this.buttonBack = document.getElementById("buttonBack")
+        this.buttonPickUp = document.getElementById("buttonPickUp")
+        this.buttonLeave = document.getElementById("buttonLeave")
         this.response = document.getElementById("response")
         this.information = document.getElementById("information")
+        this.inventoryText = document.getElementById("inventory")
+        this.inventoryArr = []
         this.current = 0
         this.floorImg = document.getElementById("floorImg")
         this.layOut = [
@@ -186,9 +191,9 @@ class App
             this.floorImg.src = this.layOut[2]
         }
         this.response.textContent = "You move to " + this.locations[this.current].title
-        this.information.textContent = "Your possible choices now are " + this.locations[this.current].possible
         this.myTitle.textContent = this.locations[index].title;
         this.myImage.src = this.locations[index].image
+        console.log(this.current)
         this.buttonVisible()
     }
     buttonVisible(){
@@ -208,11 +213,42 @@ class App
         if (this.locations[this.current].possible.includes("Back")){
             this.buttonBack.style.visibility = "visible"
         }
+        if (this.current == 1 && this.inventoryArr.includes(" a thing") && this.inventoryArr.includes(" a note")){
+            this.information.style.fontSize = "90%"
+            this.information.textContent = "With the random shit you found you can now leave"
+            this.buttonLeave.style.visibility = "visible"
+        }
+        else if (this.current == 4 && this.inventoryArr.includes(" a thing") == false){
+            this.buttonPickUp.style.visibility = "visible"
+            this.information.textContent = "You see something on the front desk"
+        }
+        else if (this.current == 15 && this.inventoryArr.includes(" a note") == false){
+            this.buttonPickUp.style.visibility = "visible"
+            this.information.textContent = "You see a note  on the floor"
+        }
+        else{
+            this.buttonPickUp.style.visiblity = "hidden"
+            this.information.textContent = ""
+        }
     }
     goDir(direction){
         let point_index = this.locations[this.current].directions[direction]
         this.show(point_index)
-
+    }
+    pickUp(){
+        if (this.current == 4){
+            this.inventoryArr.push(" a thing")
+        }
+        else if (this.current == 15){
+            this.inventoryArr.push(" a note")
+        }
+        this.inventoryText.style.visibility = "visible"
+        this.inventoryText.textContent = "Inventory: " + this.inventoryArr
+        this.buttonPickUp.style.visibility = "hidden"
+    }
+    leave(){
+        console.log("leaving")
+        this.endScreen.style.visibility = "visible"
     }
 }
 

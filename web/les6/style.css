@@ -7,6 +7,20 @@ body{
     display: flex;
     overflow: hidden;
 }
+#endScreen{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+    line-height: 80vh;
+    font-size: 200px;
+    background-color: black;
+    color: white;
+    visibility: hidden;
+}
 #floorImg{
     margin-top: 10vh;
     width: 30vw;
@@ -34,12 +48,22 @@ body{
     position: absolute;
     top: 75%;
 }
-#myInteraction > button{
+button{
     width: 40px;
     height: 40px;
 }
 p{
     padding-top: 15px;
+}
+button{
+    text-decoration: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: grey;
 }
 #buttonForward{
     position: absolute;
@@ -62,6 +86,14 @@ p{
     top: 30%;
     left: 16%;
 }
+#buttonPickUp, #buttonLeave{
+    position: absolute;
+    border-radius: 5px;
+    top: 85%;
+    left: 14%;
+    width: 200px;
+    visibility: hidden;
+}
 #myTitle{
     position: absolute;
     top: 2%;
@@ -78,4 +110,10 @@ p{
     position: absolute;
     top: 52%;
     left: 40%;
+}
+#inventory{
+    position: absolute;
+    top: 72%;
+    left: 40%;
+    visibility: hidden;
 }
